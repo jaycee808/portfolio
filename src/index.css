@@ -3,174 +3,222 @@
 
 /* Global Styles */
 *,
-::after,
-::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*::after,
+*::before {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: 'Familjen Grotesk', sans-serif;
-  background: #000;
-  color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+margin: 0;
+font-family: 'Familjen Grotesk', sans-serif;
+background: #000;
+color: #E3E3E3;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 ul {
-  list-style-type: none;
-  color: #fff;
+list-style-type: none;
+color: #E3E3E3;
 }
 
 li a {
-  text-decoration: none;
-  color: #fff;
+text-decoration: none;
+color: #E3E3E3;
+}
+
+h1,
+h2,
+h3,
+h4 {
+line-height: 1.2;
 }
 
 h1 {
-  font-size: 3rem;
-  line-height: 1.2;
+font-size: 3rem;
 }
 
 h2 {
-  font-size: 2rem;
-  line-height: 1.2;
+font-size: 2rem;
 }
 
 h3 {
-  font-size: 1.25rem;
-  line-height: 1.2;
+font-size: 1.25rem;
 }
 
 h4 {
-  font-size: 0.875rem;
-  line-height: 1.2;
+font-size: 0.875rem;
 }
 
 p {
-  margin-bottom: 1.25rem;
+margin-bottom: 1.25rem;
 }
 
-button {
-  color: #fff;
+/* home page styles*/
+
+#home {
+  width: 90%;
+  height: 80%;
+  margin: 4rem;
+  margin-right: 0px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color: #E3E3E3;
 }
 
+.vertical-text-name {
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
+  font-size: 7em;
+  position: sticky;
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-weight: bold;
+  -webkit-text-stroke: 1px #E3E3E3;
+  color: transparent;
+  margin-top: 6rem;
+}
+
+.text-one {
+  font-size: 2rem;
+  color: #E3E3E3;
+}
+
+.text-two {
+  color: #E3E3E3;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.text-three {
+  font-size: 2.5rem;
+  margin: 5px 0;
+  color: #E3E3E3;
+}
+
+.text-four {
+  font-size: 1.8rem;
+  margin: 5px 0;
+  color: #E3E3E3;
+}
+
+.button {
+  margin: 14px 0;
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-family: 'Familjen Grotesk', sans-serif;
+  font-size: 25px;
+  font-weight: 400;
+  background: #2626F5;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.4s ease;
+}
+
+.button:hover {
+  border: 2px solid #E3E3E3;
+}
+
+.button a {
+  text-decoration: none;
+  color: #E3E3E3;
+}
+
+/* media queries */
 @media screen and (min-width: 800px) {
-  body {
-    font-size: 1rem;
-  }
+body {
+font-size: 1rem;
+}
 
-  h1 {
-    font-size: 4rem;
-  }
+h1 {
+font-size: 4rem;
+}
 
-  h2 {
-    font-size: 2.5rem;
-  }
+h2 {
+font-size: 2.5rem;
+}
 
-  h3 {
-    font-size: 1.75rem;
-  }
+h3 {
+font-size: 1.75rem;
+}
 
-  h4 {
-    font-size: 1rem;
-  }
+h4 {
+font-size: 1rem;
+}
 
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
+h1,
+h2,
+h3,
+h4 {
+line-height: 1;
+}
 }
 
 /* Hero section styles */
 .section {
-  width: 90vw;
-  margin: 0 auto;
+width: 90vw;
+margin: 0 auto;
 }
 
 @media screen and (min-width: 992px) {
-  .section {
-    width: 95vw;
-  }
+.section {
+width: 95vw;
+}
 }
 
 /* Navbar styles */
-.nav-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  padding: 1rem;
+#navbar {
+display: flex;
+justify-content: space-between;
+padding: 1rem;
+margin: 0 2rem;
+align-items: center;
+}
+
+.nav-item {
+font-size: 2rem;
+padding: 0.5rem 2rem;
+display: inline;
 }
 
 .nav-toggle {
-  font-size: 1.5rem;
-  background: transparent;
-  border-color: transparent;
-  cursor: pointer;
+font-size: 1.5rem;
+background: transparent;
+border-color: transparent;
+cursor: pointer;
+color: #2626F5;
 }
 
-.nav-toggle:hover {
-  color: blue;
-}
+/* .nav-toggle:hover {
+color: #E3E3E3;
+} */
 
-.links a {
-  font-size: 1rem;
-  display: block;
-  padding: 0.5rem 1rem;
-}
-
-.links a:hover {
-  padding-left: 1.5rem;
-  background: transparent;
-}
+/* .nav-link:hover {
+text-decoration: underline;
+} */
 
 .links-container {
-  height: 0;
-  overflow: hidden;
+height: 0;
+overflow: hidden;
 }
 
 .show-container {
-  height: 10rem;
+display: grid;
+height: auto;
 }
 
 @media screen and (min-width: 800px) {
-  .nav-center {
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem;
-  }
-
-  .nav-header {
-    padding: 0;
-  }
-
-  .nav-toggle {
-    display: none;
-  }
-
-  .links-container {
-    height: auto !important;
-    overflow: visible !important;
-  }
-
-  .links {
-    display: flex;
-    padding: 0;
-  }
-
-  .links a {
-    margin: 0 0.5rem;
-    padding: 0;
-  }
-
-  .links a:hover {
-    padding: 0;
-  }
+.nav-toggle {
+display: none;
 }
+
+.links-container {
+height: auto !important;
+overflow: visible !important;
+}
+}
+
+/* End of CSS */
